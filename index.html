@@ -141,6 +141,18 @@
   .contact-interests strong { color:var(--text); }
   footer { border-top:1px solid var(--border); padding:24px; text-align:center; color:#4a2030; font-size:13px; }
   
+  .project-collab-link{
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.2s ease, text-shadow 0.2s ease, filter 0.2s ease;
+	}
+
+  .project-collab-link:hover{
+	color: #f0e8e8;
+	text-shadow: 0 0 8px rgba(196, 30, 58, 0.75), 0 0 16px rgba(196, 30, 58, 0.45);
+	filter: brightness(1.1);
+	}
+  
   /* ── RESPONSIVE ── */
 
   /* Large desktop (1400px+): constrain max widths */
@@ -443,7 +455,8 @@
           <div class="project-meta"><span class="tag" style="background:#d4a01722;color:#d4a017;border:1px solid #d4a01744;">AI / ML</span><span class="project-subtitle">End-to-End Production ML System</span></div>
           <h3 class="project-title">AI Lead Quality Scoring &amp; Spam Detection</h3>
           <p class="project-desc">Fine-tuned BERT (99.12%) and RoBERTa (99.41%) for spam detection, paired with XGBoost scoring at R²=0.9996 across 4,137 engineered features from UK Companies House, firmographics, and DNS/SMTP signals. Deployed via FastAPI with live SHAP explanations, a Tailwind SPA, and an automated nightly retraining pipeline.</p>
-          <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Hugging Face</span><span class="tech-tag">BERT</span><span class="tech-tag">RoBERTa</span><span class="tech-tag">XGBoost</span><span class="tech-tag">FastAPI</span><span class="tech-tag">SHAP</span><span class="tech-tag">SQLite</span></div>
+          <p class="project-desc">Done in collaboration with <a href="https://www.rootexception.com/" target="_blank" rel="noopener noreferrer" class="project-collab-link">Prince Kumar Nath</a>.</p>
+		  <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Hugging Face</span><span class="tech-tag">BERT</span><span class="tech-tag">RoBERTa</span><span class="tech-tag">XGBoost</span><span class="tech-tag">FastAPI</span><span class="tech-tag">SHAP</span><span class="tech-tag">SQLite</span></div>
           <div class="project-stats">
             <div class="project-stat"><div class="stat-value" style="color:#d4a017;">99.41%</div><div class="stat-label">Spam Detection</div></div>
             <div class="project-stat"><div class="stat-value" style="color:#d4a017;">0.9996</div><div class="stat-label">Lead Score R²</div></div>
